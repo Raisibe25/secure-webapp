@@ -2,7 +2,7 @@ services:
   - type: web
     name: secure-webapp
     env: java
-    buildCommand: "./mvnw clean package"
+    buildCommand: "./mvn clean package"
     startCommand: "java -jar target/userwebapp.war"
     envVars:
       - key: DB_URL
