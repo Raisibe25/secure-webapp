@@ -1,9 +1,8 @@
 services:
   - type: web
     name: secure-webapp
-    env: java
-    buildCommand: "./mvn clean package"
-    startCommand: "java -jar target/secure-webapp.war"
+    env: docker
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: DB_URL
         value: jdbc:mysql://localhost:3306/userswa?useSSL=false&allowPublicKeyRetrieval=true
