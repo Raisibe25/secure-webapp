@@ -17,7 +17,7 @@
   </jsp-config>
          <servlet>
   <servlet-name>LoginServlet</servlet-name>
-  <servlet-class>com.example.LoginServlet</servlet-class>
+  <servlet-class>com.app.controller.LoginServlet</servlet-class>
 </servlet>
 
 <servlet-mapping>
