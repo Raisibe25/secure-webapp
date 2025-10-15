@@ -3,7 +3,7 @@ services:
     name: secure-webapp
     env: java
     buildCommand: "./mvn clean package"
-    startCommand: "java -jar target/userwebapp.war"
+    startCommand: "java -jar target/secure-webapp.war"
     envVars:
       - key: DB_URL
         value: jdbc:mysql://localhost:3306/userswa?useSSL=false&allowPublicKeyRetrieval=true
