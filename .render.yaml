@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: secure-webapp
+    env: java
+    buildCommand: "./mvnw clean package"
+    startCommand: "java -jar target/userwebapp.war"
+    envVars:
+      - key: DB_URL
+        value: jdbc:mysql://localhost:3306/userswa?useSSL=false&allowPublicKeyRetrieval=true
+      - key: ENCRYPTION_KEY
+        value: wDilk954ZQPZWGpysSVJbw==
