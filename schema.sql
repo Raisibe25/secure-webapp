@@ -11,6 +11,5 @@ CREATE TABLE IF NOT EXISTS users (
   created_at    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create an admin. Replace HASH with a real bcrypt hash (e.g., using PasswordUtil).
 INSERT INTO users (username,email,password_hash,first_name,last_name,role)
-VALUES ('admin','admin@example.com','$2a$12$replaceMeWithRealHashxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx','Site','Admin','ADMIN');
+VALUES ('admin','admin@example.com','$2a$12$kqO52c2yfsYRgsINloF/re2.1OxNd2RlwUcLp9hMpEBvUVxKRXvtS','Site','Admin','ADMIN');
